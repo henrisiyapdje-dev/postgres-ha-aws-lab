@@ -1,8 +1,8 @@
-cat > .gitignore <<'EOF'
 # Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
+*.tfplan
 crash.log
 crash.*.log
 *.tfvars
@@ -35,6 +35,15 @@ vault_password_file
 # PostgreSQL
 *.log
 
+# Mattermost
+mattermost/config/config.json
+mattermost/config/*.json
+mattermost/data/
+mattermost/logs/
+
+# Environment-specific AWS output
+terraform/ips.json
+
 # OS
 .DS_Store
 Thumbs.db
@@ -42,6 +51,3 @@ Thumbs.db
 # Editors
 .vscode/
 .idea/
-EOF
-terraform/ha-lab.tfplan
-terraform/ips.json
