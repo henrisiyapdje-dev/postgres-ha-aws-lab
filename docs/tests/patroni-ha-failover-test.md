@@ -184,7 +184,7 @@ pg-ha-2  Leader   running
 pg-ha-3  Replica  running
 ```
 
-The PostgreSQL timeline changed from `17` to `18`.
+The PostgreSQL timeline changed from `18` to `19`.
 
 ## Patroni Primary Health Check
 
