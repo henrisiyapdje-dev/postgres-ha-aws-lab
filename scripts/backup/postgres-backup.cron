@@ -1,0 +1,11 @@
+# PostgreSQL backup automation
+# Runs under the postgres Linux account
+
+# Daily backup at 2:00 AM
+0 2 * * * /var/lib/pgsql/backup_perf_lab.sh
+
+# Weekly backup every Sunday at 3:00 AM
+0 3 * * 0 /var/lib/pgsql/backup_perf_lab_weekly.sh
+
+# Monthly backup on the first day at 4:00 AM
+0 4 1 * * /var/lib/pgsql/backup_perf_lab_monthly.sh
